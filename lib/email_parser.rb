@@ -11,9 +11,10 @@ class EmailParser
   def parse
     #parses the emails
     #when a new instance is created, turns into an array of emails 
+    new_email = @emails.split.collect {|a| a.split(",")}
+    email_array = new_email.flatten.uniq 
+    email_array
     
-    @emails.split(","," ")
-    binding.pry
   end
 end
 
