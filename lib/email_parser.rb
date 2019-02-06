@@ -12,7 +12,7 @@ class EmailParser
     #parses the emails
     #when a new instance is created, turns into an array of emails 
     
-    @emails.split(",")
+    @emails.split(","," ")
     binding.pry
   end
 end
